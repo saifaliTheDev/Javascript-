@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        document.write("Failure is a key to success");
+    </script>
+
+    <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+    <button onclick="document.write('talha namaz prh raha he')">Click me to write in document</button>
+
+    <!-- <button onclick="print()">Print</button> -->
+
+    <p id="first-paragraph"> Lorem ipsum dolor sit amet.</p>
+
+    <!-- <button onclick="formatContent()"> Click to format</button> -->
+
+    <img id="bulb" src="images/pic_bulboff.gif">
+
+
+    <p id="second-paragraph"> This is my second paragraph.</p>
+
+    <button onclick="printDocument()">print</button>
+
+    <!-- ________________________________ -->
+
+    <h1>What can Javascript do?</h1>
+
+    <p id="content"> Javascript can change HTML content</p>
+
+    <button onclick="changeContent();">Click me!</button>
+
+    <h3>What can Javascript do?</h3>
+    <p> Javascript can change HTML attribute values.</p>
+    <p> In this case Javascript can change the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('off'). src='images/pic_bulbon.gif'">Turn on the light</button>
+    <img src="images/pic_bulboff.gif" id="off">
+    <button onclick="document.getElementById('off'). src='images/pic_bulboff.gif'">Turn off the light</button>
+
+
+    <p id="para"> Javascript can change the style of HTML content</p>
+
+
+    <!--Default font size is 16px-->
+
+    <button onclick="document.getElementById('para').style.fontSize='60px'">Click me!</button>
+
+    <p id="hide"> Javascript can hide HTML content.</p>
+
+    <button onclick="document.getElementById('hide').style.display='none'">Click me!</button>
+
+
+    <p>Javascript can show hidden HTML elements.</p>
+    <p id="demo" style="display: none;"> Displayed!🚀</p>
+
+    <button onclick="getElementById('demo').style.display='block'">Click me!</button>
+
+    <h1>Javascript in Body</h1>
+    <p id="demo1"></p>
+
+    <script>
+        document.getElementById("demo1").innerHTML = "My First Javascript.☺️"
+    </script>
+
+    <h1> Lorem, ipsum.</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        document.write(5+16);
+    </script>
+
+
+    <button onclick="document.write('Lorem')"> This will overwrite your data.</button>
+
+    <!-- <script>
+        alert(5+16);
+    </script> -->
+
+    
+    <script>
+        window.alert('This is Alert.')
+    </script>
+
+    <button onclick="window.print()">
+        Print this Page.🖨️
+    </button>
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
