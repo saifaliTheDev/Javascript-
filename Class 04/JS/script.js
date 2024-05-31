@@ -65,7 +65,7 @@ document.getElementById("concatenateSomeStrings").onclick = function () {
   console.log(message + " " + name + banger);
 };
 
-alert("yeh kia ho rha hey");
+alert("Prompts & if statements");
 // Prompts and if statements
 
 document.getElementById("askNameFromUser").onclick = function () {
@@ -79,13 +79,6 @@ document.getElementById("askNameFromUser").onclick = function () {
 /* prompt ke through jo value aai gi wo string me receive hogi
    or agar number me output chahye ho to hum prompt keyword se phle
    + symbol use krlete hain. */
-
-document.getElementById("askNo.FromUser").onclick = function () {
-  let num1 = +prompt("Enter your 1st Number");
-  let num2 = +prompt("Enter your 2nd Number");
-
-  console.log(num1 + num2);
-};
 
 {
   let num1 = prompt("Enter your first number", "10"); // , k baad are parameters
@@ -119,7 +112,7 @@ function getNumbersAndSum() {
 
   if (number1 == 0) {
     alert("Please enter your first number");
-    return;
+    return; // return is used only inside the function | Without we cannot use return statement.
   }
 
   let number2 = +prompt("Enter your second number");
