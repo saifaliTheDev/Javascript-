@@ -114,12 +114,17 @@ if (fathersName == null) {
   alert("Enter your fathers name");
 }
 
-let number1 = +prompt("Enter your first number");
+function getNumbersAndSum() {
+  let number1 = +prompt("Enter your first number");
 
-if (number1 == 20) {
-  alert("Number is equal to 20");
+  if (number1 == 0) {
+    alert("Please enter your first number");
+    return;
+  }
+
+  let number2 = +prompt("Enter your second number");
+
+  console.log(number1 + number2);
 }
 
-let number2 = +prompt("Enter your second number");
-
-console.log(number1 + number2);
+getNumbersAndSum();
