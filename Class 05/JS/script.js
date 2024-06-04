@@ -32,34 +32,34 @@ document.getElementById("name").onclick = function () {
 
 // 2 Methods:
 
-// window.onload = function(){
-//     let message = "Good Day"
-//     let firstName = prompt("Enter your first name");
-//     let lastName = prompt("Enter your last name");
-//     let banger = "!"
+window.onload = function(){
+    let message = "Good Day"
+    let firstName = prompt("Enter your first name");
+    let lastName = prompt("Enter your last name");
+    let banger = "!"
 
-//     let fullName = firstName+lastName
+    let fullName = firstName+lastName
 
-//     let userName = message + " " + fullName + banger;
+    let userName = message + " " + fullName + banger;
 
-//     document.getElementById("userName").innerHTML = userName;
+    document.getElementById("userName").innerHTML = userName;
 
-// }
+}
 
-// function askName() {
-//   let message = "Good Day";
-//   let firstName = prompt("Enter your first name");
-//   let lastName = prompt("Enter your last name");
-//   let banger = "!";
+function askName() {
+  let message = "Good Day";
+  let firstName = prompt("Enter your first name");
+  let lastName = prompt("Enter your last name");
+  let banger = "!";
 
-//   let fullName = firstName + lastName;
+  let fullName = firstName + lastName;
 
-//   let userName = message + " " + fullName + banger;
+  let userName = message + " " + fullName + banger;
 
-//   document.getElementById("userName").innerHTML = userName;
-// }
+  document.getElementById("userName").innerHTML = userName;
+}
 
-// askName();
+askName();
 
 /* Assignment Operator : " = "   Equality Operator : " == "
         Identity Operator : " === "        */
@@ -85,12 +85,12 @@ if (num1 != num2) {
   alert("Numbers are not equal.");
 }
 
-// var num1 = 10;
-// var num2 = 20;
+var num1 = 10;
+var num2 = 20;
 
-// if(num1<num2){
-//   alert("Your Condition is True!")
-// }
+if(num1<num2){
+  alert("Your Condition is True!")
+}
 
 var num1 = 80;
 var num2 = 60;
@@ -109,3 +109,4 @@ if (age >= 18 && weight <= 70) {
 } else if (age >= 18 && weight < 70) {
   alert("You're a fat guy.");
 } else "You're a baby";
+
