@@ -1,0 +1,25 @@
+push: add element at the end of array..
+
+pop: remove element from the end of array..
+
+unshift: add element at the beginning of an  array
+
+shift: remove element from the beginning of an array
+
+splice: remove elements from array.
+
+slice : copy elements from an array as well as from character.*
+_________________________________________________________
+
+only slice() method can be applied on characters.
+let name = "Ahmad"
+name.slice (0,1)
+//output: "A"
+
+name. Slice(1)
+//output: "hmad"
+
+_______________________________________________
+
+charAt(0)
+  <span style="color: red; font-size: 20px;"> + cityWordInCapitalize + </span> is already in list;
