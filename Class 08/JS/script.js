@@ -185,8 +185,81 @@ function checkCity() {
 function addEmoji(emoji) {
   document.getElementById("output").innerHTML += emoji;
 }
+// Find word
 
 function findWord() {
-  let someText = "My name is Saif Ali";
-  someText = someText.toLowerCase();
+  let newOriginalText = originalText.toLowerCase();
+
+  let word = document.getElementById("inputText").value;
+
+  if (!word) {
+    alert("Please type a word to find");
+  }
+  word = word.toLowerCase();
+
+  let findWord = newOriginalText.indexOf(word);
+  console.log(findWord);
+
+  if (findWord !== -1) {
+    alert("word found at index : " + findWord);
+    let html =
+      'Your Word <span style = "color: green; font-size: 18px" > ' +
+      word +
+      " </span> found at index: " +
+      findWord;
+    document.getElementById("output").innerHTML = html;
+  } else {
+    alert("word not found");
+    let html =
+      '"Your Word <span style="color: red; font-size: 18px;">"' +
+      word +
+      '"</span> doesn\'t exist in the Original String"' +
+      findWord;
+    document.getElementById("output").innerHTML = html;
+  }
+  // if (findWord == -1) {
+  //   alert("word not found");
+  // } else alert("word found at index : " + findWord);
+}
+
+// Replace word
+
+// {
+//   let cnic = "33100-1234567-8";
+//   let word = "-";
+//   let replaceWith = "";
+//   word = new RegExp(word, "g");
+//   let cnicWithoutDashes = cnic.replace(word, replaceWith);
+//   console.log(cnicWithoutDashes);
+// }
+
+// let cnic = "33102-3601050-1";
+// let word = "-";
+// let replaceWith = "";
+// word = new RegExp(word, "g"); // selects all dashes in the cnic, otherwise it selects first dash only in cnic.
+// let cnicWithoutDashes = cnic.replace(word, replaceWith);
+
+function replaceWord() {
+  let newOriginalText = originalText.toLowerCase();
+
+  word = document.getElementById("inputText").value;
+
+  if (!word) {
+    alert("Please type a word for replacing.");
+    return;
+  }
+
+  let replaceWith = prompt("Enter a word that you want to replace with");
+
+  if (!replaceWith) {
+    alert("Please type a word to replace with " + word + ".");
+    return;
+  }
+
+  word = word.toLowerCase();
+  word = new RegExp(word, "g");
+  replaceWith = replaceWith.toLowerCase();
+
+  let replaceWord = newOriginalText.replace(word, replaceWith);
+  document.getElementById("output").innerHTML = replaceWord;
 }
