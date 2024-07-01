@@ -100,9 +100,18 @@ function dice() {
 
 // Generate a strong password
 
+function getValue() {
+  return document.getElementById("inputText").value;
+}
+
 function password() {
-  let inputValue = document.getElementById("inputText").value;
-  let length = inputValue;
+  // let inputValue = document.getElementById("inputText").value;
+  let length = getValue();
+
+  // if (!length) {
+  //   toastifyError("Please enter length");
+  //   return;
+  // }
 
   let randomString = " ";
   let upperCaseAlphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -131,4 +140,45 @@ function password() {
       '"</span></p>';
     document.getElementById("output").innerHTML = html;
   }
+}
+
+// Value string me he ati hey from input field and prompt.
+
+let num = "123.4567";
+console.log(num);
+console.log(typeof num);
+
+// num = parseInt(num);
+// console.log(num);
+// console.log(typeof num);
+
+// num = parseFloat(num);
+// console.log(num);
+// console.log(typeof num);
+
+num = Number(num);
+console.log(num);
+console.log(typeof num);
+
+num = num.toFixed(2); // only works with number data type.
+console.log(num);
+
+// Calculate GST
+
+function calculateGST() {
+  let cost = getValue();
+  if (!cost) {
+    alert("Please type something to calculate");
+    return;
+  }
+
+  cost = Number(cost); // converting datatype into number.
+
+  let taxInput = +prompt("Enter your tax");
+
+  let taxAmount = cost * (taxInput / 100);
+  let grandAmount = cost + taxAmount;
+  console.log(grandAmount);
+  grandAmount = Math.round(grandAmount);
+      
 }
